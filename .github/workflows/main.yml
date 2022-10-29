@@ -15,10 +15,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Lint and Prettier
-        # To run multiple commands we do the following
-        # run: |
-        #   npm run lint
-        #   npm run style:lint
-        #   npm run style:prettier
+      - name: Run Lint
         run: npm run style:all
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
