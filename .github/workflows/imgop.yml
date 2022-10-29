@@ -1,26 +1,3 @@
-# name: WorkifyStyling
-
-# on:
-#   push:
-#     branches: [main]
-
-# jobs:
-#   lintTest:
-#     name: Styling
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Clone Repository
-#         uses: actions/checkout@v2
-
-#       - name: Install Dependencies
-#         run: npm install
-
-#       - name: Run Lint
-#         run: npm run style:all
-
-#       - name: Prettify code
-#         uses: creyD/prettier_action@v4.2
-
 name: WorkifyImageOptimization
 
 on:
