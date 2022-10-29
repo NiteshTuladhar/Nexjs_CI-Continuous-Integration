@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "style:all": "npm run style:lint && npm run style:prettier",
+    "style:all": "npm run lint && npm run style:lint && npm run style:prettier",
     "style:lint": "eslint **/*.{js,jsx,ts,tsx}",
     "style:prettier": "prettier --check **/*.{js,jsx,ts,tsx}",
     "make-pretty": "prettier --write **/*.{js,jsx,ts,tsx}"
