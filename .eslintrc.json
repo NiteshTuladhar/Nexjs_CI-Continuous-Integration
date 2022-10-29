@@ -1,3 +1,44 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": ["next/core-web-vitals"],
+  "plugins": ["unused-imports"],
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/no-danger": "off", // it's self explainatory that no-danger should be used sparingly
+    "react/react-in-jsx-scope": "off", // next.js does not require react in most components
+    "no-console": "error", // no console statements allowed
+    "prettier/prettier": "off" // don't show prettier errors as it will be fixed when saved anyway
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      },
+      "babel-module": {
+        "extensions": [".js", ".jsx"],
+        "alias": {
+          "@/components": "./components",
+          "@/styles": "./styles"
+        }
+      }
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "amd": true
+  }
 }
