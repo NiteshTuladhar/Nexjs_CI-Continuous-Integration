@@ -15,10 +15,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.2
-
       - name: Run Lint
         run: npm run style:all
 
-
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
