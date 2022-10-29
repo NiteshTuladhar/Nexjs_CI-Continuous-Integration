@@ -20,6 +20,3 @@ jobs:
 
       - name: Prettify code
         uses: creyD/prettier_action@v4.2
-
-      - name: Check Prettified Code
-        run: npm run style:prettier
