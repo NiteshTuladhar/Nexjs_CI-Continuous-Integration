@@ -21,7 +21,7 @@
 #       - name: Prettify code
 #         uses: creyD/prettier_action@v4.2
 
-name: WorkifyImageOptimization
+name: WorkifyImageCompression
 
 on:
   pull_request:
