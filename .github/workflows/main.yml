@@ -1,4 +1,4 @@
-name: WorkifyImageOptimization
+name: WorkifyImageCompression
 
 on:
   pull_request:
